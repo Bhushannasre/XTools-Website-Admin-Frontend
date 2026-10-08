@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  background: #f3f4f6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+img, svg, canvas {
+  max-width: 100%;
+}
+
+.admin-card {
+  background-color: #ffffff;
+  border-radius: 0.7rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+@media (max-width: 639px) {
+  .admin-table {
+    font-size: 0.8125rem;
+  }
+
+  .admin-page-title {
+    word-break: break-word;
+  }
+}
